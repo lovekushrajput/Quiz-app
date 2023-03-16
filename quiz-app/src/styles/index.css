@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* custom */
+body {
+  background-color: rgb(194, 189, 177);
+  font-family: "Just Another Hand", cursive;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: "Trade Winds", cursive;
+  font-size: 3rem;
+  display: inline-block;
+  margin: 0.5rem 0;
+  color: rgb(107, 77, 51);
+}
+
+.sketchy {
+  display: inline-block;
+  border: 1px solid black;
+  font-size: 1.3rem;
+  border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+  text-transform: uppercase;
+  letter-spacing: 0.3ch;
+  position: relative;
+  font-family: "Just Another Hand", cursive;
+  background-color: transparent;
+}
+
+.sketchy::before {
+  content: "";
+  border: 1px solid #353535;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0) scale(1) rotate(3deg);
+  border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+}
+
+.quiz-level {
+  float: right;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.quiz-level select {
+  outline-color: rgb(109, 61, 19);
+  border: 1px solid rgb(109, 61, 19);
+}
+
+.quiz-level select,
+option {
+  font-family: "Just Another Hand", cursive;
+  font-size: 1.3rem;
+  background-color: rgb(194, 189, 177);
+  border-radius: 0.5rem;
+}
+
+.cards li {
+  border: 3px double rgb(109, 61, 19);
+  padding: 0.5rem;
+
+  color: rgb(77, 46, 19);
+  font-family: "Just Another Hand", cursive;
+  font-size: 1.3rem;
+  /* box-shadow: 1px 1px 8px 1px rgba(77, 46, 19, 0.5); */
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  /* font-family: 'Trade Winds', cursive; */
+  /* font-family: 'Amatic SC', cursive; */
+  /* background-color: rgb(247, 204, 148); */
+}
+
+.cards li:hover {
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 1px 1px 8px 1px rgba(77, 46, 19, 0.5);
+  cursor: pointer;
+  border: 3px solid rgb(77, 46, 19);
+}
+
+.cards li a {
+  text-decoration: none;
+  float: right;
+  text-transform: lowercase;
+  /* font-family: 'Megrim', cursive; */
+}
+
+.question {
+  margin-top: 1rem;
+  font-family: "Trade Winds", cursive;
+}
+.question h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.question ul {
+  margin: 1rem 0;
+}
+
+.progress {
+  border: 1px solid rgb(107, 77, 51);
+  border-radius: 2rem;
+}
+
+.progress-bar {
+  padding: 0.1rem;
+  background-color: rgb(107, 77, 51);
+}
+
+.sQ {
+  background-color: rgb(107, 77, 51);
+  color: rgb(194, 189, 177);
+}
+
+.next-btn {
+  font-family: "Trade Winds", cursive;
+  color: rgb(194, 189, 177);
+  float: right;
+  background-color: rgb(107, 77, 51);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-color: goldenrod;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+tbody,
+tr,
+th {
+  border: 2px solid #172d9d;
+  padding: 1rem;
+  font-family: "Trade Winds", cursive;
+}
+
+tbody td {
+  border: 2px solid #0d228b;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+
+.justify-space {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.justify-content {
+  justify-content: space-between;
+}
+
+/* margins */
+.margin-1 {
+  margin: 1rem 0;
+}
+
+/* width */
+
+.width-50 {
+  width: 50%;
+}
+
+.width-60 {
+  width: 60%;
+}
